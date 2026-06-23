@@ -927,8 +927,8 @@ async function importTimeremapData(data) {
                             // キーフレーム位置には実際の値を設定
                             newSheet.data[frame][layerId] = cellValue;
                         } else {
-                            // 継続フレームには「-」を設定（空セルは空のまま）
-                            newSheet.data[frame][layerId] = isBlind ? '' : '-';
+                            // 継続フレームには「」を設定（空セルは空のまま）
+                            newSheet.data[frame][layerId] = isBlind ? '' : '';
                         }
                     }
                 }
